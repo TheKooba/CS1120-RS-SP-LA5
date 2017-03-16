@@ -7,6 +7,12 @@ public class HighArea extends Area {
 	private double radiation;
 	
 	// *************************************************************************
+	/**
+	 * 
+	 * @param basicEnergyCost
+	 * @param elevation
+	 * @param radiation
+	 */
 	public HighArea(double basicEnergyCost, double elevation, double radiation) {
 
 		super(basicEnergyCost, elevation, radiation);
