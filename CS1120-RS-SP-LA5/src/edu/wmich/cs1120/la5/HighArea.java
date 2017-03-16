@@ -12,7 +12,7 @@ public class HighArea extends Area {
 	@Override
 	public double getBasicEnergyCost() {
 		
-		
+		System.out.print("Hi");
 		return 0;
 	}
 	
