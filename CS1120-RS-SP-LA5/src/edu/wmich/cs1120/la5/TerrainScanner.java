@@ -6,5 +6,11 @@ public class TerrainScanner {
 	public TerrainScanner() {
 		
 	}
+
+	public void setTerrain(Area[][] areaArray) {
+		
+		
+		
+	}
 	
 }
