@@ -4,43 +4,54 @@ import java.util.ArrayList;
 
 public class EnergyAnalyzer implements IRover {
 	
+	private String analysis;
+	private MapCreator mc = new MapCreator();
+	private ArrayList<IArea> path = new ArrayList<IArea>();
+	
+	// *************************************************************************
+	/**
+	 * 
+	 */
 	public EnergyAnalyzer() {
 		
 	}
 	
+	// *************************************************************************
 	@Override
 	public ArrayList<IArea> getPath() {
 		
-		
-		return null;
+		return path;
 	}
-
+	
+	// *************************************************************************
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
-		
-		
+		this.path = path;
 	}
-
+	
+	// *************************************************************************
 	@Override
 	public void analyzePath() {
 		
 		
 		
 	}
-
+	
+	// *************************************************************************
 	@Override
 	public String getAnalysis() {
 		
 		
-		return null;
+		return analysis;
 	}
-
+	
+	// *************************************************************************
 	@Override
 	public void setAnalysis(String analysis) {
 		
-		
-		
+		this.analysis = analysis;
 	}
-
+	// *************************************************************************
+	
 }

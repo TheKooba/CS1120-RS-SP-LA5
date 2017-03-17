@@ -20,7 +20,6 @@ public abstract class Area implements IArea {
 	@Override
 	public double getBasicEnergyCost() {
 		
-		
 		return basicEnergyCost;
 	}
 	
