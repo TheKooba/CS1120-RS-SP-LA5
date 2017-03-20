@@ -17,6 +17,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getBasicEnergyCost() {
 		
@@ -24,6 +27,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setBasicEnergyCost(double basicEnergyCost) {
 		
@@ -31,6 +37,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getElevation() {
 		
@@ -38,6 +47,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setElevation(double elevation) {
 		
@@ -45,6 +57,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getRadiation() {
 		
@@ -52,6 +67,9 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setRadiation(double radiation) {
 		
@@ -59,8 +77,12 @@ public abstract class Area implements IArea {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public abstract double calcConsumedEnergy();
+	
 	// *************************************************************************
 	
 }
