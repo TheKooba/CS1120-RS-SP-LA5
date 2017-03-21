@@ -6,15 +6,14 @@
  * Lab Time: Wed 10:30
  * Date: 3/15/2017
  * Due: 3/29/2017
- * References: N/A
- * Files: "Terrain.txt", & "Terrain.dat"
+ * References: "LA5_GUI.jar" & "LA5_TerrainScanner.jar"
+ * Files Used: "Terrain.txt" & "Terrain.dat"
  * Description: Program that when executed runs a GUI simulation
  * 				for the Mars Exploration company.
  */
 package edu.wmich.cs1120.la5;
 
 import edu.wmich.cs1120.la5.gui.MainWindow;
-import edu.wmich.cs1120.la5.TerrainScanner;
 
 public class LA5Main {
 	
