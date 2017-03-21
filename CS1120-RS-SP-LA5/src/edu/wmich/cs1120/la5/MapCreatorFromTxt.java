@@ -69,6 +69,9 @@ public class MapCreatorFromTxt implements IMapCreator {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public TerrainScanner getScanner() {
 		
@@ -76,6 +79,9 @@ public class MapCreatorFromTxt implements IMapCreator {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setScanner(TerrainScanner scanner) {
 		

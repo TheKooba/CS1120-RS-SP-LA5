@@ -9,11 +9,16 @@ public class Expression implements IExpression {
 	public Expression() {
 		
 	}
-
+	
+	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public Integer getValue() {
 		
 		return null;
 	}
+	// *************************************************************************
 	
 }

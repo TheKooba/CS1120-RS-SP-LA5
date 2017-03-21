@@ -19,6 +19,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getBasicEnergyCost() {
 		
@@ -26,6 +29,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setBasicEnergyCost(double basicEnergyCost) {
 		
@@ -33,6 +39,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getElevation() {
 		
@@ -40,6 +49,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setElevation(double elevation) {
 		
@@ -47,6 +59,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double getRadiation() {
 		
@@ -54,6 +69,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setRadiation(double radiation) {
 		
@@ -61,6 +79,9 @@ public class HighArea extends Area {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public double calcConsumedEnergy() {
 		

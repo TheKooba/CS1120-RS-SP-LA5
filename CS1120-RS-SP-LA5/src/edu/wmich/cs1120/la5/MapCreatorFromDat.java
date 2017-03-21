@@ -15,6 +15,9 @@ public class MapCreatorFromDat implements IMapCreator {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		
@@ -23,6 +26,9 @@ public class MapCreatorFromDat implements IMapCreator {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public TerrainScanner getScanner() {
 		
@@ -31,6 +37,9 @@ public class MapCreatorFromDat implements IMapCreator {
 	}
 	
 	// *************************************************************************
+	/**
+	 * 
+	 */
 	@Override
 	public void setScanner(TerrainScanner scanner) {
 		
