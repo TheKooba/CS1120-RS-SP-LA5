@@ -25,12 +25,7 @@ public class HighArea extends Area {
 	@Override
 	public double getBasicEnergyCost() {
 		
-<<<<<<< HEAD
 		return basicEnergyCost;
-=======
-		System.out.print("Hi");
-		return 0;
->>>>>>> branch 'master' of https://github.com/TheKooba/CS1120-RS-SP-LA5.git
 	}
 	
 	// *************************************************************************
