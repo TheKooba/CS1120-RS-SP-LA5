@@ -10,14 +10,6 @@ public class MapCreatorFromDat implements IMapCreator {
 	/**
 	 * 
 	 */
-	public MapCreatorFromDat() {
-		
-	}
-	
-	// *************************************************************************
-	/**
-	 * 
-	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		

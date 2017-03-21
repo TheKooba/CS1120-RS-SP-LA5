@@ -16,14 +16,6 @@ public class MapCreatorFromTxt implements IMapCreator {
 	/**
 	 * 
 	 */
-	public MapCreatorFromTxt() {
-		
-	}
-	
-	// *************************************************************************
-	/**
-	 * 
-	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 
@@ -66,6 +58,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 			j++;
 		}
 		scanner.setTerrain(areaArray);
+		scan.close();
 	}
 	
 	// *************************************************************************
