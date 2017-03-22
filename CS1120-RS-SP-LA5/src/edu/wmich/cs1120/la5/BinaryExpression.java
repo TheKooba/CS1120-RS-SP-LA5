@@ -2,12 +2,27 @@ package edu.wmich.cs1120.la5;
 
 public class BinaryExpression implements IExpression {
 	
+	private int val1;
+	private int val2;
+	
+	private Addition add = new Addition();
+	private Subtraction sub = new Subtraction();
+	private Literal a = new Literal(val1);
+	private Literal b = new Literal(val2);
+	
 	// *************************************************************************
 	/**
 	 * 
 	 */
-	public BinaryExpression() {
-		
+	public BinaryExpression(Addition add, Literal a, Literal b) {
+		this.add = add;
+		this.a = a;
+		this.b = b;
+	}
+	public BinaryExpression(Subtraction sub, Literal a, Literal b){
+		this.sub = sub;
+		this.a = a;
+		this.b = b;
 	}
 	
 	// *************************************************************************

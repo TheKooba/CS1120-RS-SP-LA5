@@ -18,7 +18,7 @@ public class ExpressionFactory {
 	public static IExpression getExpression(char operator, int val1, int val2) {
 		
 		Addition add = new Addition();
-		Subtraction subtract = new Subtraction();
+		Subtraction sub = new Subtraction();
 		
 		Literal a = new Literal(val1);
 		Literal b = new Literal(val2);
@@ -29,7 +29,7 @@ public class ExpressionFactory {
 		}
 		
 		if (operator == '-') {
-			IExpression exp = new BinaryExpression(subtract, a, b);
+			IExpression exp = new BinaryExpression(sub, a, b);
 			return null; // IExpression Object
 		}
 		
