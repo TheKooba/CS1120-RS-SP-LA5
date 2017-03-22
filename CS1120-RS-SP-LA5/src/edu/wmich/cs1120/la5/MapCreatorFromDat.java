@@ -35,10 +35,10 @@ public class MapCreatorFromDat implements IMapCreator {
 		int j = 0;
 
 		// While loop to parse & read the input array
-		while (i == 0) {
+		while () {
 
 
-			basicEnergyCost = 0;
+			basicEnergyCost = 
 			elevation = 
 			radiation = 
 
@@ -70,7 +70,6 @@ public class MapCreatorFromDat implements IMapCreator {
 	 */
 	@Override
 	public TerrainScanner getScanner() {
-		
 		
 		return this.scanner;
 	}
