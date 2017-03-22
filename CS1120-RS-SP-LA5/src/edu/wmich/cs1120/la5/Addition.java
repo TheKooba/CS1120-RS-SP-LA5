@@ -17,7 +17,7 @@ public class Addition implements IOperation {
 	@Override
 	public Integer perform(IExpression left, IExpression right) {
 		
-		return null;
+		return (left.getValue() + right.getValue());
 	}
 	// *************************************************************************
 	
