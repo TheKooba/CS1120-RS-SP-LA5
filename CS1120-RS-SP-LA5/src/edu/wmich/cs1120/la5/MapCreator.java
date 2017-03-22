@@ -20,15 +20,17 @@ public class MapCreator implements IMapCreator {
 		// Initialize & set up the Scanner / File Reader
 		File file = new File(fileName);
 		Scanner scan = new Scanner(file);
-
+		
+		// If-Statement for the TEXT File
 		if(fileName == "terrain.txt") {
-			MapCreatorFromTxt mc = new MapCreatorFromTxt();
-			mc.scanTerrain(fileName, threshold);
+			MapCreatorFromTxt mct = new MapCreatorFromTxt();
+			mct.scanTerrain(fileName, threshold);
 		}
 		
+		// If-Statement for the DAT File
 		if(fileName == "terrain.dat") {
-			MapCreatorFromDat mc = new MapCreatorFromDat();
-			mc.scanTerrain(fileName, threshold);
+			MapCreatorFromDat mcd = new MapCreatorFromDat();
+			mcd.scanTerrain(fileName, threshold);
 		}
 		
 		
