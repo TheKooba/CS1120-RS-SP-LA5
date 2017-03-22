@@ -35,7 +35,7 @@ public class MapCreatorFromDat implements IMapCreator {
 		int j = 0;
 
 		// While loop to parse & read the input array
-		while () {
+		while (i == 0) {
 
 
 			basicEnergyCost = 

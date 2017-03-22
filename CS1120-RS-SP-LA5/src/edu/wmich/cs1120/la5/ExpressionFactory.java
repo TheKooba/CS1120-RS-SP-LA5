@@ -13,7 +13,7 @@ public class ExpressionFactory {
 	 * @param operator The operator signifies addition or subtraction
 	 * @param val1 Value One for the operation
 	 * @param val2Value Two for the operation
-	 * @return
+	 * @return Returns an IExpression Object for use within the If-Statements
 	 */
 	public static IExpression getExpression(char operator, int val1, int val2) {
 		
@@ -25,10 +25,12 @@ public class ExpressionFactory {
 		
 		if (operator == '+') {
 			IExpression exp = new BinaryExpression(add, a, b);
+			return null; // IExpression Object
 		}
 		
 		if (operator == '-') {
 			IExpression exp = new BinaryExpression(subtract, a, b);
+			return null; // IExpression Object
 		}
 		
 		return null;
