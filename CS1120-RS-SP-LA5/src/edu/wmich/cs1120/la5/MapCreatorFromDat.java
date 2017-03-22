@@ -38,7 +38,7 @@ public class MapCreatorFromDat implements IMapCreator {
 		while (i == 0) {
 
 
-			basicEnergyCost = 
+			basicEnergyCost = 0;
 			elevation = 
 			radiation = 
 
