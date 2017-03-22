@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class ElevationAnalyzer implements IRover {
 	
 	private String analysis;
-	private MapCreator mc = new MapCreator();
 	private ArrayList<IArea> path = new ArrayList<IArea>();
 	
 	// *************************************************************************
