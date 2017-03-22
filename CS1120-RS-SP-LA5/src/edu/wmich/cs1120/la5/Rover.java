@@ -9,7 +9,7 @@ public class Rover implements IRover {
 	private String analysis;
 	private MapCreator mc = new MapCreator();
 	private ArrayList<IArea> path = new ArrayList<IArea>();
-	
+
 	// *************************************************************************
 	/**
 	 * 
@@ -30,7 +30,7 @@ public class Rover implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Set the path to be the given argument
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
@@ -40,7 +40,7 @@ public class Rover implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Analyze the path according to the type of the analyzer
 	 */
 	@Override
 	public void analyzePath() {
@@ -51,7 +51,7 @@ public class Rover implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Get the result of the analysis according to the type of the analyzer
 	 */
 	@Override
 	public String getAnalysis() {
@@ -67,6 +67,16 @@ public class Rover implements IRover {
 	public void setAnalysis(String analysis) {
 		
 		this.analysis = analysis;
+	}
+	
+	// *************************************************************************
+	/**
+	 * Return the name of the analyzer
+	 */
+	@Override
+	public String toString() {
+
+		return super.toString();
 	}
 	// *************************************************************************
 	
