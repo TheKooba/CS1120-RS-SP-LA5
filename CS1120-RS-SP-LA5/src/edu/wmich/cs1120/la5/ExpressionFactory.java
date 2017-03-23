@@ -23,11 +23,13 @@ public class ExpressionFactory {
 		Literal a = new Literal(val1);
 		Literal b = new Literal(val2);
 		
+		// If-Statement for the Addition Operator
 		if (operator == '+') {
 			IExpression exp = new BinaryExpression(add, a, b);
 			return null; // IExpression Object
 		}
 		
+		// If-Statement for the Subtraction Operator
 		if (operator == '-') {
 			IExpression exp = new BinaryExpression(sub, a, b);
 			return null; // IExpression Object
