@@ -66,6 +66,16 @@ public class RadiationAnalyzer implements IRover {
 		
 		this.analysis = analysis;
 	}
+	
+	// *************************************************************************
+	/**
+	 * To String method returns the name of the analyzer.
+	 */
+	@Override
+	public String toString() {
+
+		return "Total Radiation: ";
+	}
 	// *************************************************************************
 	
 }

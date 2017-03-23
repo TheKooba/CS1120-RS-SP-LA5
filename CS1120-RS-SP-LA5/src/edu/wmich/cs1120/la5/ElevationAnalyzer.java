@@ -69,6 +69,16 @@ public class ElevationAnalyzer implements IRover {
 		
 		this.analysis = analysis;
 	}
+	
+	// *************************************************************************
+	/**
+	 * To String Method returns the title of the elevation button.
+	 */
+	@Override
+	public String toString() {
+
+		return "Average Elevation: ";
+	}
 	// *************************************************************************
 	
 }
