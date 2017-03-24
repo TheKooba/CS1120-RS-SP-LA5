@@ -1,7 +1,9 @@
 package edu.wmich.cs1120.la5;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -25,7 +27,7 @@ public class MapCreatorFromDat implements IMapCreator {
 
 		// Initialize & set up the Scanner / File Reader
 		File file = new File(fileName);
-		DataOutputStream scan = new DataOutputStream(new FileOutputStream (file));
+		DataInputStream scan = new DataInputStream(new FileInputStream (file));
 
 		// Initialize Variables
 		double basicEnergyCost = 0;
@@ -35,12 +37,12 @@ public class MapCreatorFromDat implements IMapCreator {
 		int j = 0;
 
 		// While loop to parse & read the input array
-		while (i == 0) {
+		while (j != -1) {
 
-
-			basicEnergyCost = 
-			elevation = 
-			radiation = 
+// Attempting to be able to read from the dat file
+//			basicEnergyCost = scan.readFloat();
+//			elevation = scan.readFloat();
+//			radiation = scan.readFloat();
 
 			energyArray[i][j] = basicEnergyCost;
 			elevationArray[i][j] = elevation;
