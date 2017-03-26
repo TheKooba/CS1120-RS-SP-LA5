@@ -22,7 +22,6 @@ public class RadiationAnalyzer implements IRover {
 	@Override
 	public ArrayList<IArea> getPath() {
 		
-		
 		return this.path;
 	}
 	
@@ -43,7 +42,11 @@ public class RadiationAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		
+		double totalEnergyCost = 0;
 		
+		for(int i = 0; i < path.size()-1; i++) {
+			totalEnergyCost += path.get(i).calcConsumedEnergy();
+		}
 		
 	}
 	
