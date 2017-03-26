@@ -27,40 +27,37 @@ public class MapCreatorFromTxt implements IMapCreator {
 		double basicEnergyCost = 0;
 		double elevation = 0;
 		double radiation = 0;
-		int i = 0;
-		int j = 0;
+
 
 		// While loop to parse & read the input array
-		while (scan.hasNextLine()) {
+			
+			for (int i = 0; i < 10; i++){
+				for (int j = 0; j < 10; j++){
+					
+					String[] str = scan.nextLine().split(" ");
 
-			String[] str = scan.nextLine().split(" ");
+					basicEnergyCost = Double.parseDouble(str[0]);
+					elevation = Double.parseDouble(str[1]);
+					radiation = Double.parseDouble(str[2]);
 
-			basicEnergyCost = Double.parseDouble(str[0]);
-			elevation = Double.parseDouble(str[1]);
-			radiation = Double.parseDouble(str[2]);
+					energyArray[i][j] = basicEnergyCost;
+					elevationArray[i][j] = elevation;
+					radiationArray[i][j] = radiation;
 
-			energyArray[i][j] = basicEnergyCost;
-			elevationArray[i][j] = elevation;
-			radiationArray[i][j] = radiation;
-
-			if (radiation >= 0.5) {
-				areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
-			} else if (radiation < 0.5 && elevation > (0.5 * threshold)) {
-				areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
-			} else {
-				areaArray[i][j] = new LowArea(basicEnergyCost, elevation, radiation);
+					if (radiation >= 0.5) {
+						areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
+					} else if (radiation < 0.5 && elevation > (0.5 * threshold)) {
+						areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
+					} else {
+						areaArray[i][j] = new LowArea(basicEnergyCost, elevation, radiation);
+					}
+				}
 			}
-
-			if (j == 9) {
-				i++;
-				j = -1;
-			}
-			j++;
+			scanner.setTerrain(areaArray);
+			scan.close();
 		}
-		scanner.setTerrain(areaArray);
-		scan.close();
-	}
 	
+
 	// *************************************************************************
 	/**
 	 * 

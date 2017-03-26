@@ -33,38 +33,34 @@ public class MapCreatorFromDat implements IMapCreator {
 		double basicEnergyCost = 0;
 		double elevation = 0;
 		double radiation = 0;
-		int i = 0;
-		int j = 0;
 
-		// While loop to parse & read the input array
-		while (j != -1) {
 
-// Attempting to be able to read from the dat file
-//			basicEnergyCost = scan.readFloat();
-//			elevation = scan.readFloat();
-//			radiation = scan.readFloat();
+// Reads the .dat file
+			
+			for (int i = 0; i < 10; i++){
+				for (int j = 0; j < 10; j++){
+					basicEnergyCost = scan.readDouble();
+					elevation = scan.readDouble();
+					radiation = scan.readDouble();
 
-			energyArray[i][j] = basicEnergyCost;
-			elevationArray[i][j] = elevation;
-			radiationArray[i][j] = radiation;
+					energyArray[i][j] = basicEnergyCost;
+					elevationArray[i][j] = elevation;
+					radiationArray[i][j] = radiation;
 
-			if (radiation >= 0.5) {
-				areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
-			} else if (radiation < 0.5 && elevation > (0.5 * threshold)) {
-				areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
-			} else {
-				areaArray[i][j] = new LowArea(basicEnergyCost, elevation, radiation);
+					if (radiation >= 0.5) {
+						areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
+					} else if (radiation < 0.5 && elevation > (0.5 * threshold)) {
+						areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
+					} else {
+						areaArray[i][j] = new LowArea(basicEnergyCost, elevation, radiation);
+					}
+				}
 			}
-
-			if (j == 9) {
-				i++;
-				j = -1;
-			}
-			j++;
+			scanner.setTerrain(areaArray);
+			scan.close();
 		}
-		scanner.setTerrain(areaArray);
-		scan.close();
-	}
+
+		
 	
 	// *************************************************************************
 	/**
