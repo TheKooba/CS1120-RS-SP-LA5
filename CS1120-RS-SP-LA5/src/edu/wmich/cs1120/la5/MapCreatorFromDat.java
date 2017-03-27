@@ -15,7 +15,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Scans the terrain given by the .Dat file to generate the GUI terrain.
 	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
@@ -23,13 +23,12 @@ public class MapCreatorFromDat implements IMapCreator {
 		// Initialize & set up the Scanner / File Reader
 		File file = new File(fileName);
 		DataInputStream scan = new DataInputStream(new FileInputStream (file));
-
+		
 		// Initialize Variables
 		double basicEnergyCost = 0;
 		double elevation = 0;
 		double radiation = 0;
-
-
+		
 			// For-Loop reads the .dat file
 			for (int i = 0; i < 10; i++){
 				for (int j = 0; j < 10; j++){
@@ -59,7 +58,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for retrieving the scanner variable
 	 */
 	@Override
 	public TerrainScanner getScanner() {
@@ -69,7 +68,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for retrieving the scanner variable
 	 */
 	@Override
 	public void setScanner(TerrainScanner scanner) {

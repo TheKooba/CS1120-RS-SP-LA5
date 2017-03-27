@@ -8,6 +8,7 @@ public class Literal implements IExpression {
 	 * 
 	 */
 	public Literal(int val) {
+		
 		this.value = val;
 	}
 	
