@@ -43,6 +43,10 @@ public class MapCreatorFromTxt implements IMapCreator {
 					energyArray[i][j] = basicEnergyCost;
 					elevationArray[i][j] = elevation;
 					radiationArray[i][j] = radiation;
+					
+//					System.out.println(energyArray[i][j]);
+//					System.out.println(elevationArray[i][j]);
+//					System.out.println(radiationArray[i][j]);
 
 					if (radiation >= 0.5) {
 						areaArray[i][j] = new HighArea(basicEnergyCost, elevation, radiation);
