@@ -17,7 +17,7 @@ public class EnergyAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the ArrayList variable.
 	 */
 	@Override
 	public ArrayList<IArea> getPath() {
@@ -27,7 +27,7 @@ public class EnergyAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the ArrayList variable.
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
@@ -52,18 +52,17 @@ public class EnergyAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the String variable analysis.
 	 */
 	@Override
 	public String getAnalysis() {
-		
 		
 		return analysis;
 	}
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the String variable analysis.
 	 */
 	@Override
 	public void setAnalysis(String analysis) {
