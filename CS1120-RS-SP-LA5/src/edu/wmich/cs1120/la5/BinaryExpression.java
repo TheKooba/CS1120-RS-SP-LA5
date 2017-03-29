@@ -13,7 +13,7 @@ public class BinaryExpression implements IExpression {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * BinaryExpression is a setter method for the objects add, a, and b.
 	 * @param add
 	 * @param a
 	 * @param b
@@ -27,7 +27,7 @@ public class BinaryExpression implements IExpression {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * BinaryExpression is a setter method for the objects sub, a, and b.
 	 * @param sub
 	 * @param a
 	 * @param b
@@ -45,6 +45,7 @@ public class BinaryExpression implements IExpression {
 	 */
 	@Override
 	public Integer getValue() {
+		
 		
 		
 		return null;
