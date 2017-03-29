@@ -15,7 +15,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * Scans the terrain given by the .Dat file to generate the GUI terrain.
+	 * Scans the terrain given by the .dat file to generate the GUI terrain.
 	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {

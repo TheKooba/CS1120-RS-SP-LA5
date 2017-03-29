@@ -6,6 +6,7 @@ public class RadiationAnalyzer implements IRover {
 	
 	private String analysis;
 	private ArrayList<IArea> path = new ArrayList<IArea>();
+	private double totalRadiation;
 	
 	// *************************************************************************
 	/**
@@ -41,11 +42,8 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public void analyzePath() {
-		
-		double totalEnergyCost = 0;
-		
 		for(int i = 0; i < path.size()-1; i++) {
-			totalEnergyCost += path.get(i).calcConsumedEnergy();
+			totalRadiation += path.get(i).getRadiation();
 		}
 		
 	}
@@ -76,8 +74,8 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-
-		return "Total Radiation: ";
+		analyzePath();
+		return "Total Radiation: " + totalRadiation;
 	}
 	// *************************************************************************
 	

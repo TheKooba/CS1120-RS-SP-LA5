@@ -6,6 +6,8 @@ public class ElevationAnalyzer implements IRover {
 	
 	private String analysis;
 	private ArrayList<IArea> path = new ArrayList<IArea>();
+	private double averageElevation;
+	private double totalElevation;
 	
 	// *************************************************************************
 	/**
@@ -41,12 +43,10 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public void analyzePath() {
-		
-		double totalEnergyCost = 0;
-		
 		for(int i = 0; i < path.size()-1; i++) {
-			totalEnergyCost += path.get(i).calcConsumedEnergy();
+			totalElevation += path.get(i).getElevation();
 		}
+		averageElevation = totalElevation / path.size();
 		
 	}
 	
@@ -76,8 +76,8 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-
-		return "Average Elevation: ";
+		analyzePath();
+		return "Average Elevation: " + averageElevation;
 	}
 	// *************************************************************************
 	
