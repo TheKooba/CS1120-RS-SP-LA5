@@ -2,10 +2,6 @@ package edu.wmich.cs1120.la5;
 
 public class LowArea extends Area {
 	
-	private double basicEnergyCost;
-	private double elevation;
-	private double radiation;
-	
 	// *************************************************************************
 	/**
 	 * 
@@ -17,7 +13,7 @@ public class LowArea extends Area {
 		
 		super(basicEnergyCost, elevation, radiation);
 	}
-
+	
 	@Override
 	public double calcConsumedEnergy() {
 		
