@@ -26,13 +26,13 @@ public class ExpressionFactory {
 		// If-Statement for the Addition Operator
 		if (operator == '+') {
 			IExpression exp = new BinaryExpression(add, a, b);
-			return null; // IExpression Object
+			return exp; // IExpression Object
 		}
 		
 		// If-Statement for the Subtraction Operator
 		if (operator == '-') {
 			IExpression exp = new BinaryExpression(sub, a, b);
-			return null; // IExpression Object
+			return exp; // IExpression Object
 		}
 		
 		return null;
