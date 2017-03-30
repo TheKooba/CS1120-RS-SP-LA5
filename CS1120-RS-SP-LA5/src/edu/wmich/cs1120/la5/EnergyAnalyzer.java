@@ -42,9 +42,10 @@ public class EnergyAnalyzer implements IRover {
 	 */
 	@Override
 	public void analyzePath() {
-		for(int i = 0; i < path.size()-1; i++) {
+		for(int i = 0; i < path.size(); i++) {
 			totalEnergyCost += path.get(i).calcConsumedEnergy();
 		}
+		analysis = Double.toString(totalEnergyCost);
 	}
 	
 	// *************************************************************************
@@ -74,7 +75,7 @@ public class EnergyAnalyzer implements IRover {
 	@Override
 	public String toString() {
 			analyzePath();
-		return "Total Energy Cost: " + totalEnergyCost;
+		return "Total Energy Cost: ";
 	}
 	// *************************************************************************
 	
