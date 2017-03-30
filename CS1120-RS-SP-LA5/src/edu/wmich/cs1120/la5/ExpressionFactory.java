@@ -2,10 +2,6 @@ package edu.wmich.cs1120.la5;
 
 public class ExpressionFactory {
 	
-	public ExpressionFactory() {
-		
-	}
-	
 	// *************************************************************************
 	/**
 	 * This method will create and return a proper object according 
@@ -25,14 +21,14 @@ public class ExpressionFactory {
 		
 		// If-Statement for the Addition Operator
 		if (operator == '+') {
-			IExpression exp = new BinaryExpression(add, a, b);
-			return exp; // IExpression Object
+			IExpression expAdd = new BinaryExpression(add, a, b);
+			return expAdd; // IExpression Object
 		}
 		
 		// If-Statement for the Subtraction Operator
 		if (operator == '-') {
-			IExpression exp = new BinaryExpression(sub, a, b);
-			return exp; // IExpression Object
+			IExpression expSub = new BinaryExpression(sub, a, b);
+			return expSub; // IExpression Object
 		}
 		
 		return null;
