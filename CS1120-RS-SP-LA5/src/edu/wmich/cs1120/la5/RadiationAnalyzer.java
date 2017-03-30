@@ -75,7 +75,6 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-		analyzePath();
 		return "Total Radiation: ";
 	}
 	// *************************************************************************
