@@ -5,9 +5,9 @@ public interface IOperation {
 	// *************************************************************************
 	/**
 	 * Perform the operation accordingly and return the value
-	 * @param left
-	 * @param right
-	 * @return
+	 * @param left one variable
+	 * @param right the other variable
+	 * @return the expressions result
 	 */
 	Integer perform(IExpression left, IExpression right);
 	

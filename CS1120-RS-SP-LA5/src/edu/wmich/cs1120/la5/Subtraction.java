@@ -4,7 +4,7 @@ public class Subtraction implements IOperation {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Constructor for the class
 	 */
 	public Subtraction() {
 		
@@ -12,7 +12,7 @@ public class Subtraction implements IOperation {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Subtracts the two inputted values
 	 */
 	@Override
 	public Integer perform(IExpression left, IExpression right) {

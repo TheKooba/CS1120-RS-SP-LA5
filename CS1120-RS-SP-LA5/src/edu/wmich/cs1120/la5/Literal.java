@@ -5,7 +5,7 @@ public class Literal implements IExpression {
 	private int value;
 	// *************************************************************************
 	/**
-	 * 
+	 * Constructor for literal
 	 */
 	public Literal(int val) {
 		
@@ -14,7 +14,7 @@ public class Literal implements IExpression {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter for value
 	 */
 	@Override
 	public Integer getValue() {

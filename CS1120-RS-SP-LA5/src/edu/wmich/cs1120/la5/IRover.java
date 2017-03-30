@@ -6,41 +6,41 @@ public interface IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
-	 * @return
+	 * Getter for path
+	 * @return path
 	 */
 	ArrayList<IArea> getPath();
 	
 	// *************************************************************************
 	/**
-	 * 
-	 * @param path
+	 * Setter for the path
+	 * @param path the Array List of the path to be taken
 	 */
 	void setPath(ArrayList<IArea> path);
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Analyzes the path
 	 */
 	void analyzePath();
 	
 	// *************************************************************************
 	/**
-	 * 
-	 * @return
+	 * Getter for analysis
+	 * @return final analysis
 	 */
 	String getAnalysis();
 	
 	// *************************************************************************
 	/**
-	 * 
-	 * @param analysis
+	 * Setter for analysis
+	 * @param analysis the string analysis
 	 */
 	void setAnalysis(String analysis);
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * To string method
 	 * @return
 	 */
 	String toString();

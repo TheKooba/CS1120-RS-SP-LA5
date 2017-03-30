@@ -14,7 +14,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Reads from the file and fills all the subsequent arrays
 	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
@@ -64,7 +64,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter for scanner
 	 */
 	@Override
 	public TerrainScanner getScanner() {
@@ -74,7 +74,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter for the scanner
 	 */
 	@Override
 	public void setScanner(TerrainScanner scanner) {
