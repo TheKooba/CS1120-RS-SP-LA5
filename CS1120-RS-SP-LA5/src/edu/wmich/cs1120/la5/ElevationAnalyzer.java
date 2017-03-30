@@ -70,8 +70,8 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public String toString() {
-		analyzePath();
-		return "Average Elevation: " + averageElevation;
+		
+		return "Average Elevation: ";
 	}
 	// *************************************************************************
 	
