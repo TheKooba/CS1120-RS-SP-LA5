@@ -4,6 +4,7 @@ import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 public class MapCreatorFromDat implements IMapCreator {
 	
@@ -22,16 +23,23 @@ public class MapCreatorFromDat implements IMapCreator {
 		
 		// Initialize & set up the Scanner / File Reader
 		File file = new File(fileName);
-		DataInputStream scan = new DataInputStream(new FileInputStream (file));
+		RandomAccessFile scan = new RandomAccessFile(file, "r");
 		
 		// Initialize Variables
 		double basicEnergyCost = 0;
 		double elevation = 0;
 		double radiation = 0;
+		int left = 0;
+		int right = 0;
+		int ind = 0;
+		
+		IExpression expresso;
+		char car;
 		
 			// For-Loop reads the .dat file
 			for (int i = 0; i < 10; i++){
 				for (int j = 0; j < 10; j++){
+					scan.seek(ind * 34);
 					basicEnergyCost = scan.readDouble();
 					elevation = scan.readDouble();
 					radiation = scan.readDouble();
@@ -51,7 +59,14 @@ public class MapCreatorFromDat implements IMapCreator {
 					} else {
 						areaArray[i][j] = new LowArea(basicEnergyCost, elevation, radiation);
 					}
+					car = scan.readChar();
+					left = scan.readInt();
+					right = scan.readInt();
+					
+					expresso = ExpressionFactory.getExpression(car, left, right);
+					ind = expresso.getValue();
 				}
+
 			}
 			
 			scanner.setTerrain(areaArray);
