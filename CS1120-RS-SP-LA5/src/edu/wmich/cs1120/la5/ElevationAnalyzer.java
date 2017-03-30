@@ -11,7 +11,7 @@ public class ElevationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the ArrayList.
 	 */
 	@Override
 	public ArrayList<IArea> getPath() {
@@ -21,7 +21,7 @@ public class ElevationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the ArrayList.
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
@@ -31,7 +31,7 @@ public class ElevationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * This method is used to analyze the path using the elevation.
 	 */
 	@Override
 	public void analyzePath() {
@@ -46,7 +46,7 @@ public class ElevationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the Analysis.
 	 */
 	@Override
 	public String getAnalysis() {
@@ -56,7 +56,7 @@ public class ElevationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the Analysis.
 	 */
 	@Override
 	public void setAnalysis(String analysis) {

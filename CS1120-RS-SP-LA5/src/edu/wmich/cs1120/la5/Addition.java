@@ -4,7 +4,7 @@ public class Addition implements IOperation {
 	
 	// *************************************************************************
 	/**
-	 * Adds the expression
+	 * Performs the addition of the left and right IExpression objects.
 	 */
 	@Override
 	public Integer perform(IExpression left, IExpression right) {

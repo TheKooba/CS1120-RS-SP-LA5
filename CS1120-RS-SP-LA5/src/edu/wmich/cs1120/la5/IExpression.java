@@ -5,7 +5,7 @@ public interface IExpression {
 	// *************************************************************************
 	/**
 	 * Return the value of the expression
-	 * @return
+	 * @return Returns the value.
 	 */
 	Integer getValue();
 	

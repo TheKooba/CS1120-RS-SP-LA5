@@ -51,7 +51,7 @@ public class RadiationAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * Getter for anaylyzer
+	 * Getter for analyzer
 	 */
 	@Override
 	public String getAnalysis() {

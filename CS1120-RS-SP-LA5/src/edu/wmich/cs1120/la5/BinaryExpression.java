@@ -9,10 +9,10 @@ public class BinaryExpression implements IExpression {
 	
 	// *************************************************************************
 	/**
-	 * 
-	 * @param left
-	 * @param right
-	 * @param op
+	 * The constructor method for the BinaryExpression Class.
+	 * @param left The left side IExpression Object.
+	 * @param right The right side IExpression Object.
+	 * @param op The IOperation object.
 	 */
 	public BinaryExpression(IOperation op, IExpression left, IExpression right) {
 		
@@ -23,7 +23,8 @@ public class BinaryExpression implements IExpression {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Uses the op.perform command to return the value using the left and 
+	 * right expression objects.
 	 */
 	@Override
 	public Integer getValue() {

@@ -10,14 +10,6 @@ public class EnergyAnalyzer implements IRover {
 	
 	// *************************************************************************
 	/**
-	 * 
-	 */
-	public EnergyAnalyzer() {
-		
-	}
-	
-	// *************************************************************************
-	/**
 	 * Getter method for the ArrayList variable.
 	 */
 	@Override

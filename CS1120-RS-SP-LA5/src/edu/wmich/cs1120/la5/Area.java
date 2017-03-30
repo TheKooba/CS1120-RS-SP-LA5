@@ -8,7 +8,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * The constructor method for the Area class.
 	 */
 	public Area(double basicEnergyCost, double elevation, double radiation) {
 		
@@ -19,7 +19,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the BasicEnergyCost.
 	 */
 	@Override
 	public double getBasicEnergyCost() {
@@ -29,7 +29,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the BasicEnergyCost.
 	 */
 	@Override
 	public void setBasicEnergyCost(double basicEnergyCost) {
@@ -39,7 +39,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the Elevation.
 	 */
 	@Override
 	public double getElevation() {
@@ -49,7 +49,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the Elevation.
 	 */
 	@Override
 	public void setElevation(double elevation) {
@@ -59,7 +59,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Getter method for the Radiation.
 	 */
 	@Override
 	public double getRadiation() {
@@ -69,7 +69,7 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * Setter method for the Radiation.
 	 */
 	@Override
 	public void setRadiation(double radiation) {
@@ -79,7 +79,8 @@ public abstract class Area implements IArea {
 	
 	// *************************************************************************
 	/**
-	 * 
+	 * This abstract method calculates consumed energy using the information of
+	 * if it is a High Area or a Low Area.
 	 */
 	@Override
 	public abstract double calcConsumedEnergy();
