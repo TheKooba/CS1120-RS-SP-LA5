@@ -41,7 +41,7 @@ public interface IRover {
 	// *************************************************************************
 	/**
 	 * To string method
-	 * @return
+	 * @return Returns the formatted toString.
 	 */
 	String toString();
 	

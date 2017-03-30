@@ -8,7 +8,7 @@ public class ExpressionFactory {
 	 * to the arguments received
 	 * @param operator The operator signifies addition or subtraction
 	 * @param val1 Value One for the operation
-	 * @param val2Value Two for the operation
+	 * @param val2 Value Two for the operation
 	 * @return Returns an IExpression Object for use within the If-Statements
 	 */
 	public static IExpression getExpression(char operator, int val1, int val2) {

@@ -9,6 +9,9 @@ public abstract class Area implements IArea {
 	// *************************************************************************
 	/**
 	 * The constructor method for the Area class.
+	 * @param basicEnergyCost The Basic Energy Cost variable.
+	 * @param elevation The Elevation variable.
+	 * @param radiation The Radiation variable. 
 	 */
 	public Area(double basicEnergyCost, double elevation, double radiation) {
 		

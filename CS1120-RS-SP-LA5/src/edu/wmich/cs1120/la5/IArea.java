@@ -5,7 +5,7 @@ public interface IArea {
 	// *************************************************************************
 	/**
 	 * Getter method for the BasicEnergyCost.
-	 * @return
+	 * @return Returns the value for the Basic Energy Cost.
 	 */
 	double getBasicEnergyCost();
 	

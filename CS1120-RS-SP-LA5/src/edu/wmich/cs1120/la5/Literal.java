@@ -5,7 +5,8 @@ public class Literal implements IExpression {
 	private int value;
 	// *************************************************************************
 	/**
-	 * Constructor for literal
+	 * Constructor Method for Literal.
+	 * @param val The variable for the value.
 	 */
 	public Literal(int val) {
 		

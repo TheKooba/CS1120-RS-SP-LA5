@@ -20,7 +20,7 @@ public class LA5Main {
 	// *************************************************************************
 	/**
 	 * The main method for the program which calls the startGUI method.
-	 * @param args
+	 * @param args Default args.
 	 */
 	public static void main(String[] args) {
 		
